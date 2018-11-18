@@ -22,6 +22,7 @@ export class HeroesComponent implements OnInit {
 }
 
 export interface Heroe {
+  index?: number;
   nombre: string;
   bio: string;
   img: string;

@@ -10,6 +10,7 @@ export class CapitalizadoPipe implements PipeTransform {
     const valor = value.toLocaleLowerCase();
     const nombres = valor.split(' ');
     if (todas) {
+      // tslint:disable-next-line:forin
       for (const nombre in nombres) {
         nombres[nombre] = nombres[nombre][0].toUpperCase() + nombres[nombre].substring(1);
       }
